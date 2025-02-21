@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   web:
     image: nginx:alpine
@@ -13,7 +11,7 @@ services:
       - example-network
 
   php:
-    image: php:8.0-fpm
+    image: php:7.4-fpm
     volumes:
       - ./:/var/www
     networks:
